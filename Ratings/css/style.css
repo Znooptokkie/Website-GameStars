@@ -43,10 +43,17 @@ header li {
     margin-left: 2.5vw;
 }
 
+.lijnHome {
+    border-bottom: #FFC000 solid 5px;
+    /* border-radius: 50%; */
+}
+
 
 /*----------------RESPONSIVE-----------------------*/
 
 @media screen and (min-width: 992px) {
+
+
     header {
         height: 75vh;
         background-size: cover;
@@ -67,11 +74,11 @@ header li {
         margin-left: 35vw;
     }
 
-    ul {
+    header ul {
         align-items: center;
     }
 
-    ul li {
+    header ul li {
         border-bottom: solid 1px #707070;
         width: 35vw;
         text-align: center;
@@ -171,6 +178,9 @@ tr:nth-child(odd):not(.headTable) {
 
 
 @media screen and (min-width: 992px) {
+    .main-1 {
+        padding-left: 20vw;
+    }
 
     #main-2 {
         background-color: #E3E3E3;
@@ -185,23 +195,23 @@ tr:nth-child(odd):not(.headTable) {
     }
 
     table {
-        float: right;
+        /* float: right; */
         margin-right: 2rem;
         max-width: 80vw;
     }
 
-    .advertentie {
+    /* .advertentie {
         height: 90vh;
         width: 17.5vw;
         background-color: green;
         position: fixed;
         margin-top: 2rem;
         margin-left: 1.25rem;
-    }
+    } */
 
     #main-2 article,
-    h2,
-    p {
+    #main-2 h2,
+    #main-2 p {
         margin: 1rem;
     }
 
@@ -251,9 +261,6 @@ tr:nth-child(odd):not(.headTable) {
     }
 }
 
-/*-------------------------FOOTER------------------------------------------*/
-
-
 .footer-dark {
     color: #f0f9ff;
     background-color: #000000;
@@ -286,6 +293,15 @@ tr:nth-child(odd):not(.headTable) {
     opacity: 1.8;
 }
 
+.social img {
+    height: 7.5vh;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width:767px) {
     .footer-dark .item:not(.social) {
         text-align: center;
@@ -298,28 +314,28 @@ tr:nth-child(odd):not(.headTable) {
 }
 
 @media (max-width:767px) {
-    .footer-dark .item.text {
+    .footer-dark .item .text {
         margin-bottom: 0;
     }
 }
 
-.footer-dark .item.text p {
+.footer-dark .item .text p {
     opacity: 0.6;
     margin-bottom: 0;
 }
 
-.footer-dark .item.social {
+.footer-dark .item .social {
     text-align: center;
 }
 
 @media (max-width:991px) {
-    .footer-dark .item.social {
+    .footer-dark .item .social {
         text-align: center;
         margin-top: 20px;
     }
 }
 
-.footer-dark .item.social>a {
+.footer-dark .item .social a {
     font-size: 25px;
     width: 36px;
     height: 36px;
@@ -333,7 +349,7 @@ tr:nth-child(odd):not(.headTable) {
     opacity: 1.75;
 }
 
-.footer-dark .item.social>a:hover {
+.footer-dark .item .social a:hover {
     opacity: 2.9;
 }
 
