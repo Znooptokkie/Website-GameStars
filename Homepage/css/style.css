@@ -1,0 +1,705 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: black;
+    background-image: url("../images/main_image/achtergrond.png");
+    overflow-x: hidden;
+}
+
+header {
+    margin-bottom: 7.5rem;
+}
+
+header .logo {
+    margin: 2.5vh 2.5vw;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    align-items: center;
+}
+
+header nav img {
+    width: 12.5vw;
+    margin-top: 2.5vh;
+}
+
+header section nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.65rem;
+}
+
+header section nav a:not(:first-child) {
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+}
+
+header section nav a:nth-child(1) {
+    color: #E3E3E3;
+}
+
+
+header h1 {
+    font-family: Code Predators, sans-serif;
+    color: #E3E3E3;
+    font-size: 4rem;
+}
+
+header li {
+    margin-left: 2.5vw;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10;
+    z-index: 10;
+}
+
+.carousel {
+    position: absolute;
+}
+
+
+.iconsSlideshow img {
+    border-radius: 10px;
+}
+
+.main-1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-1 a {
+    text-decoration: none;
+}
+
+/* .main-1 article:nth-child(1) p {
+    font-size: 2rem;
+} */
+
+.main-1 p,
+h3 {
+    color: #E3E3E3;
+}
+
+.main-1 h2 {
+    color: #E3E3E3;
+}
+
+.main-1 .activeLink-1 {
+
+    background-color: #FFC000;
+    border-radius: 20px 20px;
+}
+
+/*----------MAIN-2-----------------*/
+.main-2 {
+    width: 100%;
+    height: 120rem;
+    background-color: #E3E3E3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hoofdMenu .activeLink-2 {
+    text-align: center;
+    font-weight: bold;
+    color: #E3E3E3;
+    width: 4rem;
+    background-color: #FFC000;
+    border-radius: 20px 20px;
+}
+
+.menu-2 a p,
+h2 {
+    color: black;
+}
+
+.menu-2 h2 {
+    font-weight: bold;
+}
+
+.menu-2 a {
+    text-decoration: none;
+}
+
+.hoofdMenu p {
+    color: #707070;
+}
+
+
+
+.hoofdMenu img {
+    max-height: 30vh;
+    max-width: 200px;
+}
+
+.hoofdMenu .card h5 {
+    font-size: 2.25rem;
+}
+
+.hoofdMenu p {
+    font-size: 1.5rem;
+}
+
+.kleinMenu h4,
+p span,
+p {
+    color: #E3E3E3;
+}
+
+.card {
+    border: none;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.main-2 .card:not(.card:nth-child(5)) {
+    border-bottom: solid 1px black;
+    padding-bottom: 2.5rem;
+    border-radius: 0;
+}
+
+.leesMeer {
+    color: #FFC000;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+/*---------------------MAIN-3----------------------------------*/
+
+
+.main-3 a {
+    text-decoration: none;
+}
+
+
+.main-3 .activeLink-3 {
+    padding: 0rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #E3E3E3;
+    background-color: #FFC000;
+    border-radius: 20px 20px;
+}
+
+.menu-3 {
+    text-align: center;
+    display: flex;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -1rem;
+}
+
+.main-3 .card h5 {
+    color: #E3E3E3;
+    font-size: 1.5rem;
+}
+
+
+/*----------------------MAIN-4-----------------------------------------------*/
+
+.main-4 {
+    background-image: url("../images/main_image/main-game-achtergrond.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    padding-top: 10%;
+}
+
+.kleinArtikel video {
+    height: 20vh;
+    width: 15rem;
+    margin-left: -5rem;
+    padding-left: 2rem;
+}
+
+.main-4 h2,
+p {
+    color: #E3E3E3;
+}
+
+.main-4 h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.main-4 p {
+    font-size: 2rem;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+
+    .lijnHome {
+        border-bottom: #FFC000 solid 5px;
+        /* border-radius: 50%; */
+    }
+
+    header section nav a p:hover {
+        /* transform: scale(1.2); */
+        transform: scale(1.2);
+        color: #E3E3E3;
+    }
+
+    .iconsSlideshow a img:hover {
+        transform: scale(1.1);
+        border: #FFC000 solid 2px;
+    }
+
+    .iconsSlideshow a img {
+        width: 8vw;
+    }
+
+    .iconsSlideshow {
+        display: grid;
+        grid-template-rows: repeat(5, 100px);
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .iconsSlideshow a:nth-child(1) {
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+
+    .iconsSlideshow a:nth-child(2) {
+        grid-row-start: 4;
+        grid-column-start: 3;
+    }
+
+    .iconsSlideshow a:nth-child(3) {
+        grid-row-start: 4;
+        grid-column-start: 4;
+    }
+
+    .iconsSlideshow a:nth-child(4) {
+        grid-row-start: 4;
+        grid-column-start: 5;
+    }
+
+    .iconsSlideshow a:nth-child(5) {
+        grid-row-start: 4;
+        grid-column-start: 6;
+    }
+
+    #card-section {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+    }
+
+    #card-section .card:hover {
+        transform: scale(1.1);
+    }
+
+    .card:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .card:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .card:nth-child(3) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .card:nth-child(4) {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .card:nth-child(5) {
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    /*-------------------------MAIN---------------------------------*/
+
+
+    .main-1 {
+        padding-left: 20vw;
+        margin-bottom: 2.5rem;
+        /* padding-top: 2.5rem; */
+    }
+
+    .main-1 section article:nth-child(1) {
+        width: 25vw;
+    }
+
+    .menu-1 p {
+        font-size: 2.5rem;
+    }
+
+    .menu-1 h2 {
+        font-size: 3rem;
+    }
+
+    .menu-1 a:nth-child(2):hover {
+        transform: scale(1.1);
+    }
+
+    .menu-1 a:nth-child(3):hover,
+    .menu-1 a:nth-child(4):hover {
+        transform: scale(1.1);
+        text-decoration-line: underline;
+        text-decoration-color: #E3E3E3;
+    }
+
+    .main-2 {
+        padding-left: 20vw;
+    }
+
+    .main-2 .card img:hover {
+        transform: scale(1.1);
+    }
+
+    .menu-2 a:nth-child(2):hover {
+        transform: scale(1.1);
+    }
+
+    .menu-2 a:nth-child(3) p:hover,
+    .menu-2 a:nth-child(4) p:hover,
+    .menu-2 a:nth-child(5) p:hover,
+    .menu-2 a:nth-child(6) p:hover {
+        transform: scale(1.1);
+        text-decoration-line: underline;
+        text-decoration-color: black;
+        color: black;
+    }
+
+    .hoofdMenu {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        /* position: relative; */
+    }
+
+    .kleinMenu {
+        float: right;
+        width: 20%;
+        background-color: #000;
+        padding-top: 2.5rem;
+        padding-left: 1rem;
+        margin-right: 1rem;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .oranje-circle {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: #FFC000;
+        border-radius: 50%;
+        margin-right: 10px;
+        text-align: center;
+        padding-top: 0.1rem;
+    }
+
+    .leesMeer:hover {
+        color: white;
+    }
+
+    .main-3 {
+        width: 100%;
+        height: 32.5rem;
+        background-color: white;
+        padding-left: 20vw;
+    }
+
+    .main-3 .card img {
+        width: 7.5vw;
+        max-height: 22.5vh;
+    }
+
+    .main-3 .card:hover {
+        transform: scale(1.1);
+    }
+
+    .menuZichtbaar1 {
+        display: none;
+    }
+
+    .main-3 a p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #E3E3E3;
+    }
+
+    .main-3 h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .menu-2 a {
+        text-decoration: none;
+    }
+
+    .card {
+        margin: 2.5rem;
+        background: transparent;
+        width: 20vw;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-text h3 {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .card a:nth-child(1),
+    .card a:nth-child(2) {
+        height: 500px;
+        margin-bottom: 12.5rem;
+
+    }
+
+    .card a:nth-child(3),
+    .card a:nth-child(4) {
+        height: 200px;
+    }
+
+    .main-4 {
+        padding-left: 20vw;
+    }
+
+    .grootArtikel video {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+
+    header .logo {
+        margin-left: 35vw;
+    }
+
+    .iconsSlideshow {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 22.5rem;
+    }
+
+    .iconsSlideshow a img {
+        width: 12.5vw;
+    }
+
+    ul {
+        align-items: center;
+    }
+
+    .collapse.show {
+        background-color: #000;
+    }
+
+    .navbar-toggler {
+        background-color: white;
+        margin-left: 1.5rem;
+    }
+
+    .navbar {
+        top: 0;
+        position: absolute;
+
+        /*----------doet iets met de nav klikbaarheid----------------*/
+    }
+
+    /*--------------------------MAIN!!!!!!--------------------*/
+
+    main section article:nth-child(5) {
+        display: none;
+    }
+
+    .menu-1 {
+        margin: 12.5rem 0 -5rem 2.5%;
+        width: 95%;
+        font-size: 1.25rem;
+        padding-top: 2.5rem;
+    }
+
+    .menu-2 p {
+        font-size: 1.5rem;
+    }
+
+    .main-2 {
+        height: 365vh;
+    }
+
+    .menu-2 {
+        width: 95%;
+        padding: 2rem 0 0 2.5%;
+    }
+
+    .hoofdMenu p {
+        font-size: 1.2rem;
+    }
+
+    .hoofdMenu a {
+        color: #FFC000;
+    }
+
+    .hoofdMenu article .card img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .kleinMenu {
+        background-color: black;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5rem;
+        padding-left: 2rem;
+        height: 95vh;
+    }
+
+    .kleinMenu h4 {
+        font-size: 2.5rem;
+    }
+
+    .kleinMenu p {
+        font-size: 1.5rem;
+        margin-top: 1.25rem;
+    }
+
+    .menuMobiel {
+        width: 100%;
+    }
+
+    .oranje-circle {
+        display: inline-block;
+        width: 42.5px;
+        height: 42.5px;
+        background-color: #FFC000;
+        border-radius: 50%;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .main-3 {
+        width: 100%;
+        height: 32.5rem;
+        background-color: white;
+    }
+
+    .menu-3 a:nth-child(6),
+    .menu-3 a:nth-child(5) {
+        display: none;
+    }
+
+    .main-3 .card img {
+        width: 15vw;
+        max-height: 22.5vh;
+    }
+
+    .menuZichtbaar {
+        display: none;
+    }
+
+    .menuZichtbaar1 {
+        text-align: center;
+    }
+
+    .menuZichtbaar1 h2 {
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+    #card-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 5rem;
+    }
+
+    .card {
+        width: 45%;
+        margin: 0.5rem;
+        background: transparent;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-text h3 {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .card a:nth-child(1),
+    .card a:nth-child(2) {
+        height: 500px;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .card a:nth-child(3),
+    .card a:nth-child(4) {
+        height: 200px;
+    }
+
+    .main-4 article:nth-child(1) {
+        margin-left: 1rem;
+    }
+
+    /* .kleinArtikel:nth-child(2), */
+    /* .kleinArtikel:nth-child(1) {
+        display: none;
+    }
+
+    .kleinArtikel:nth-child(2) {
+        display: flex;
+    } */
+
+    .stream1 {
+        display: none;
+    }
+
+    .stream2 {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 5rem;
+    }
+
+    .grootArtikel video {
+        width: 80vw;
+        margin-left: 7.5vw;
+    }
+
+    .weglaten {
+        display: none;
+    }
+}
+
+
+/*----------------------TEST---------------------*/
